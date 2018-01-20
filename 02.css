@@ -1,0 +1,503 @@
+/*头部开始*/
+.top{
+    height: 42px;
+    line-height: 42px;
+    background: #333333;
+}
+.topzi{
+    width: 1226px;
+    margin: 0 auto;
+}
+.topzi a{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.topleft{
+    float: left;
+}
+.topright{
+    float: right;
+}
+.topright .denglu{
+    float: left;
+}
+.topright .shopcar{
+    float:left;
+}
+.shu{
+    font-size: 12px;
+    color: #b0b0b0;
+    font-style: normal;
+    margin: 0 3px;
+}
+.denglu a{
+    font-size: 13px;
+}
+.topright .shopcar{
+    margin-left: 10px;
+    padding: 0 10px;
+    text-align: center;
+    background: #424242;
+}
+.topright .shopcar a{
+    font-size: 15px;
+}
+/*头部结束*/
+/*导航开始*/
+.nav{
+    width: 1226px;
+    margin: 20px auto 0;
+    line-height: 100px;
+}
+.nav .logo{
+    float: left;
+}
+.logo{
+    margin-top: 20px;
+    width: 49px;
+    height: 49px;
+}
+.logo a{
+    display: block;
+    background: red;
+}
+.logo a img{
+    display: block;
+}
+.nav-item-wrap{
+    margin-left: 218px;
+    float: left;
+}
+.nav-item-wrap li{
+    padding: 0 10px;
+    float: left;
+}
+.nav-item-wrap li a{
+    color: #333333;
+    font-size: 15px;
+}
+.nav-item-wrap li a:hover{
+    color: #ff6700;
+    text-decoration: none;
+}
+.search-bar{
+    float: right;
+}
+.search-bar{
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #f1f1f1;
+}
+.search-bar .search-input{
+    float: left;
+    border: none;
+    padding: 0 5px;
+    width: 240px;
+    height: 50px;
+}
+.search-btn{
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-left: 1px solid #f1f1f1;
+    float: left;
+}
+/*导航结束*/
+/*轮播图开始*/
+.banner{
+    position: relative;
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+}
+.banner .side-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+.banner ul{
+    padding: 20px 0;
+}
+.banner ul li{
+    height: 42px;
+    line-height: 42px;
+    width: 234px;
+}
+.banner ul li:hover{
+    background: #ff6700;
+}
+.banner ul li a{
+    display: block;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 25px;
+    height: 42px;
+    line-height: 42px;
+    color: #ffffff;
+}
+.banner ul li a:hover{
+    text-decoration: none;
+}
+.banner ul li a::after{
+    content:'>';
+    color: #ffffff;
+    float: right;
+}
+/*轮播图结束*/
+/*主打产品开始*/
+.home-hero{
+    width: 1226px;
+    margin: 20px auto 0;
+}
+.home-hero-left{
+    float: left;
+    padding: 5px;
+    width: 230px;
+    height: 160px;
+    background: #333333;
+}
+.home-hero-left li{
+    margin: 0 5px 15px 0;
+    float: left;
+    width: 70px;
+    height: 72px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+}
+.home-hero-left li .last{
+    margin-right:0 ;
+}
+.home-hero-left li p{
+    margin-top: 10px;
+}
+.home-hero-left a{
+    color: #ffffff;
+    font-size: 12px;
+}
+.home-hero-left .bdn-left{
+    border-left: none;
+}
+.home-hero-left .bdn-right{
+    border-right: none;
+}
+.home-hero-left .bdn-bottom{
+    border-bottom: none;
+}
+.home-hero-left .bdn-top{
+    border-top: none;
+}
+.home-hero-right{
+    float: right;
+}
+.home-hero-right li{
+    float: left;
+    margin-right: 15px;
+}
+.home-hero-right .last {
+    margin-right: 0;
+}
+.home-hero-right a img{
+    width: 316px;
+    height: 170px;
+}
+/*主打产品结束*/
+/*明星单品开始*/
+.star-single{
+    position: relative;
+    width: 1226px;
+    margin: 20px auto 0;
+}
+.star-single h2{
+    font-weight: 200;
+    line-height: 58px;
+    height: 58px;
+    font-size: 22px;
+}
+.star-single .btns{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+}
+.star-single .btns li{
+    width: 35px;
+    height: 25px;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #b0b0b0;
+}
+.star-single .btns li.last{
+    width: 34px;
+    border-left: 1px solid #f1f1f1;
+}
+.single-item{
+    float: left;
+    margin-right: 15px;
+    width: 233px;
+    height: 340px;
+    padding-top: 39px;
+    border-top: 1px solid #ff6700;
+    text-align: center;
+    background: #fafafa;
+}
+.last{
+    margin-right: 0;
+}
+.single-item img{
+    width: 160px;
+    height: 160px;
+}
+.single-item h3{
+    margin: 12px 0 15px;
+}
+.single-item h3 a{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 200;
+    color: #000000;
+}
+.single-item p{
+    margin: 10px 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.single-item .price{
+    font-size: 14px;
+    color: #ff6700;
+    margin: 0;
+}
+/*明星单品结束*/
+/*智能硬件开始*/
+.zhinengwai{
+    height: 620px;
+    background: #e0e0e0;
+}
+.zhineng{
+    position: relative;
+    width: 1226px;
+    margin: 20px auto 0;
+}
+.zhineng h2{
+    font-weight: 200;
+    line-height: 58px;
+    height: 58px;
+    font-size: 22px;
+}
+.zhineng .btns{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+}
+.zhineng .btns li{
+    width: 35px;
+    height: 25px;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #b0b0b0;
+}
+.zhineng .btns li.last{
+    width: 34px;
+    border-left: 1px solid #f1f1f1;
+}
+.zn-main{
+    float: left;
+}
+.first{
+    float: left;
+}
+.first img {
+    width: 233px;
+    height:379px;
+}
+.second{
+    float: left;
+    margin-right: 15px;
+    width: 233px;
+    height: 340px;padding-top: 39px;
+    text-align: center;
+    background: #fafafa;
+}
+.last{
+    margin-right: 0;
+}
+.second img{
+    width: 160px;
+    height: 160px;
+}
+.second h3{
+    margin: 12px 0 15px;
+}
+.second h3 a{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 200;
+    color: #000000;
+}
+.second p{
+    margin: 10px 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.second .newprice{
+    font-size: 14px;
+    color: #ff6700;
+    margin: 0;
+}
+.second .oldprice{
+    text-decoration: line-through;
+}
+/*智能硬件结束*/
+/*服务中心开始*/
+.service{
+    width: 1226px;
+    margin: 0 auto;
+}
+.main-service{
+    padding: 30px  0;
+    border-bottom: 1px solid #b0b0b0;
+}
+.main-service li{
+    float: left;
+    width: 244px;
+    text-align: center;
+    font-size: 16px;
+    color: #b0b0b0;
+    border-right: 1px solid #f1f1f1;
+}
+.main-service li a{
+    font-size: 16px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+.main-service li a:hover{
+    color: #ff6700;
+}
+.main-service li .last{
+    border-right: none;
+}
+.service-links{
+    padding: 40px 0;
+}
+.service-links dl{
+    float: left;
+    width: 160px;
+    height: 112px;
+}
+.service-links dl dt{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.service-links dl dd{
+    margin-top: 10px;
+}
+.service-links dl a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #757575;
+}
+.phone{
+    float: left;
+    width:250px;
+    border-left: 1px solid #f1f1f1;
+}
+.phone .phone-number{
+    font-size: 22px;
+    color: #ff6700;
+    font-weight: 700;
+}
+.phone-desc{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.phone .link-item{
+    display:inline-block;
+    padding: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ff6700;
+    border: 1px solid #ff6700 ;
+    margin-top: 16px;
+}
+/*服务中心结束*/
+/*底部开始*/
+.bottom{
+    padding: 50px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.b-top{
+    position: relative;
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.b-top .logo{
+    float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.b-top .b-item{
+    margin: 0;
+    line-height: 18px;
+}
+.b-top .b-item a{
+    font-size: 12px;
+    color: #757575;
+    text-decoration: none;
+}
+.b-info p{
+    line-height: 0px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.b-top .b-item a:hover{
+    color: #ff6700;
+}
+.b-top .b-item span{
+    color: #b0b0b0;
+}
+.b-top .b-info{
+    display: inline-block;
+    margin: 0;
+    line-height: 18px;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.b-top .judge{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    float: right;
+    width: auto;
+    height: 28px;
+    margin-left: 0px;
+}
+.b-bottom{
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+}
+.b-bottom .slogan{
+    color: #888888;
+    font-size: 18px;
+    font-family: 华文新魏;
+}
+/*底部结束*/
