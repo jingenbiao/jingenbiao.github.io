@@ -2,338 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> 我们不一样</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./02.css">
-    <link rel="stylesheet" href="./qcfudong.css">
+    <title>亲，你要的帅哥哦(・。・)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 228px;
+            height: 353px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        input {
+
+            display: none;
+        }
+        .label-wrap label {
+            transform-style: preserve-3d;
+            float: left;
+            margin-right: 15px;
+            width: 228px;
+            height: 353px;
+            position: relative;
+        }
+        .label-wrap label>img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        body {
+            background: #428BFF;
+        }
+        .label-wrap label>img:first-child {
+            transform: rotateY(180deg);
+        }
+        .label-wrap label>img:last-child {
+            backface-visibility: hidden;
+        }
+        .container input:nth-child(1):checked~.label-wrap>label:nth-child(1){
+            transform: rotateY(180deg);
+        }
+        .container input:nth-child(2):checked~.label-wrap>label:nth-child(2){
+            transform: rotateY(180deg);
+        }
+        .container input:nth-child(3):checked~.label-wrap>label:nth-child(3){
+            transform: rotateY(180deg);
+        }
+        .container input:nth-child(4):checked~.label-wrap>label:nth-child(4){
+            transform: rotateY(180deg);
+        }
+        .container label{
+            transition: transform .5s linear;
+        }
+        .container .label-wrap>label:last-child {
+            float: right;
+            height: 100px;
+            width: 100px;
+            color: #333333;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 4px;
+            font-weight: 700;
+            background: red;
+        }
+    </style>
 </head>
 <body>
-<!--头部开始-->
-    <div class="top clear-fix">
-        <div class="topzi">
-            <div class="topleft" >
-                <a href="">大米网</a>
-                <span class="shu">|</span>
-                <a href="">MIUI</a>
-                <span class="shu">|</span>
-                <a href="">米聊</a>
-                <span class="shu">|</span>
-                <a href="">游戏</a>
-                <span class="shu">|</span>
-                <a href="">多看阅读</a>
-                <span class="shu">|</span>
-                <a href="">云服务</a>
-                <span class="shu">|</span>
-                <a href="">大米移动版</a>
-                <span class="shu">|</span>
-                <a href="">问题反馈</a>
-                <span class="shu">|</span>
-                <a href="">Select Region</a>
-            </div>
-            <div class="topright">
-                <div class="denglu">
-                    <a href="">登录</a>
-                    <span class="shu">|</span>
-                    <a href="">注册</a>
-                </div>
-                <div class="shopcar">
-                    <a href="">购物车（0）</a>
-                </div>
-            </div>
+    <div class="container">
+        <input id="radio1" type="radio" name="radios" value="1">
+        <input id="radio2" type="radio" name="radios" value="2">
+        <input id="radio3" type="radio" name="radios" value="3">
+        <input id="radio4" type="radio" name="radios" value="4">
+        <input id="radio5" type="radio" name="radios" value="5">
+        <div class="label-wrap">
+            <label for="radio1">
+                <img src="./images/扑克牌/1.jpg" alt=""><img src="./images/扑克牌/5.jpg" alt="">
+            </label>
+            <label for="radio2">
+                <img src="./images/扑克牌/2.jpg" alt=""><img src="./images/扑克牌/5.jpg" alt="">
+            </label>
+            <label for="radio3">
+                <img src="./images/扑克牌/3.jpg" alt=""><img src="./images/扑克牌/5.jpg" alt="">
+            </label>
+            <label for="radio4">
+                <img src="./images/扑克牌/4.jpg" alt=""><img src="./images/扑克牌/5.jpg" alt="">
+            </label>
+            <label for="radio5">
+                邪魔退散
+            </label>
         </div>
     </div>
-<!--头部结束-->
-<!--导航开始-->
-    <div class="nav clear-fix" >
-        <h1 class="logo">
-            <a href="#">
-                <img src="./imgs/mi-logo.png" alt="小米官网">
-            </a>
-        </h1>
-        <ul class="nav-item-wrap">
-            <li><a href="">小米手机</a></li>
-            <li><a href="">红米</a></li>
-            <li><a href="">笔记本</a></li>
-            <li><a href="">电视</a></li>
-            <li><a href="">盒子</a></li>
-            <li><a href="">新品</a></li>
-            <li><a href="">路由器</a></li>
-            <li><a href="">智能硬件</a></li>
-            <li><a href="">服务</a></li>
-            <li><a href="">社区</a></li>
-        </ul>
-        <div class="search-bar">
-            <input type="text" class="search-input">
-            <button class="search-btn">Go</button>
-        </div>
-    </div>
-<!--导航结束-->
-<!--轮播图开始-->
-    <div class="banner clear-fix">
-        <div class="side-bar">
-            <ul>
-                <li><a href="">手机 电话卡</a></li>
-                <li><a href="">笔记本</a></li>
-                <li><a href="">电视 盒子</a></li>
-                <li><a href="">路由器 智能硬件</a></li>
-                <li><a href="">移动电源 电池 插线板</a></li>
-                <li><a href="">耳机 音响</a></li>
-                <li><a href="">保护套 贴膜</a></li>
-                <li><a href="">线材 支架 插线板</a></li>
-                <li><a href="">箱包 服饰 鞋 眼镜</a></li>
-                <li><a href="">米兔 生活周边</a></li>
-            </ul>
-        </div>
-        <div class="banner-main">
-            <img src="./imgs/hongmi5.jpg" alt="">
-        </div>
-
-    </div>
-<!--轮播图结束-->
-<!--主打产品开始-->
-    <div class="home-hero clear-fix">
-        <ul class="home-hero-left clear-fix">
-            <li class="bdn-left bdn-top">
-                <p class="item-title"><a href="">START</a></p>
-                <p class="item-desc"><a href="">开放购买</a></p>
-            </li>
-            <li class=" bdn-top">
-                <p class="item-title"><a href="">START</a></p>
-                <p class="item-desc"><a href="">开放购买</a></p>
-            </li>
-            <li class="last bdn-right bdn-top ">
-                <p class="item-title"><a href="">START</a></p>
-                <p class="item-desc"><a href="">开放购买</a></p>
-            </li>
-            <li class="bdn-left bdn-bottom">
-                <p class="item-title"><a href="">START</a></p>
-                <p class="item-desc"><a href="">开放购买</a></p>
-            </li>
-            <li class="bdn-bottom">
-                <p class="item-title"><a href="">START</a></p>
-                <p class="item-desc"><a href="">开放购买</a></p>
-            </li>
-            <li class="last bdn-right bdn-bottom ">
-                <p class="item-title"><a href="">START</a></p>
-                <p class="item-desc"><a href="">开放购买</a></p>
-            </li>
-        </ul>
-        <ul class="home-hero-right">
-            <li>
-                <a href="">
-                    <img class="home-item" src="./imgs/home1.jpg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img class="home-item" src="./imgs/home2.jpg" alt="">
-                </a>
-            </li>
-            <li class="last">
-                <a href="">
-                    <img class="home-item" src="./imgs/home3.jpg" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!--主打产品结束-->
-    <!--明星单品开始-->
-    <div class="star-single clear-fix">
-        <h2>小米明星单品</h2>
-        <ul class="btns">
-            <li><</li>
-            <li class="last">></li>
-        </ul>
-        <ul class="star-single-main">
-            <li class="single-item">
-                <a href=""><img src="./imgs/shouhuan.png" alt=""></a>
-                <h3><a href="">小米手环</a></h3>
-                <p>OLED 显示屏幕，升级计步算法</p>
-                <p class="price">3299元起</p>
-            </li>
-            <li class="single-item">
-                <a href=""><img src="./imgs/shouhuan.png" alt=""></a>
-                <h3><a href="">小米手环</a></h3>
-                <p>OLED 显示屏幕，升级计步算法</p>
-                <p class="price">3299元起</p>
-            </li>
-            <li class="single-item">
-                <a href=""><img src="./imgs/shouhuan.png" alt=""></a>
-                <h3><a href="">小米手环</a></h3>
-                <p>OLED 显示屏幕，升级计步算法</p>
-                <p class="price">3299元起</p>
-            </li>
-            <li class="single-item">
-                <a href=""><img src="./imgs/shouhuan.png" alt=""></a>
-                <h3><a href="">小米手环</a></h3>
-                <p>OLED 显示屏幕，升级计步算法</p>
-                <p class="price">3299元起</p>
-            </li>
-            <li class="last single-item">
-                <a href=""><img src="./imgs/shouhuan.png" alt=""></a>
-                <h3><a href="">小米手环</a></h3>
-                <p>OLED 显示屏幕，升级计步算法</p>
-                <p class="price">3299元起</p>
-            </li>
-        </ul>
-    </div>
-    <!--明星单品结束-->
-    <!--智能硬件开始-->
-    <div class="zhinengwai">
-        <div class="zhineng clear-fix">
-            <h2>智能硬件</h2>
-            <ul class="btns">
-                <li><</li>
-                <li class="last">></li>
-            </ul>
-            <ul class="zn-main">
-                <li class="first">
-                    <a href=""><img src="./imgs/saodi.jpg" alt=""></a>
-                </li>
-                <li class="second">
-                    <a href=""><img src="./imgs/mitu.jpg" alt=""></a>
-                    <h3><a href="">米兔智能故事机</a></h3>
-                    <p>微信远程互动，智能语音交互</p>
-                    <p class="newprice">199元</p>
-                    <p class="oldprice">300元</p>
-                </li>
-                <li class="second">
-                    <a href=""><img src="./imgs/mitu.jpg" alt=""></a>
-                    <h3><a href="">米兔智能故事机</a></h3>
-                    <p>微信远程互动，智能语音交互</p>
-                    <p class="newprice">199元</p>
-                    <p class="oldprice">300元</p>
-                </li>
-                <li class="second">
-                    <a href=""><img src="./imgs/mitu.jpg" alt=""></a>
-                    <h3><a href="">米兔智能故事机</a></h3>
-                    <p>微信远程互动，智能语音交互</p>
-                    <p class="newprice">199元</p>
-                    <p class="oldprice">300元</p>
-                </li>
-                <li class="second">
-                    <a href=""><img src="./imgs/mitu.jpg" alt=""></a>
-                    <h3><a href="">米兔智能故事机</a></h3>
-                    <p>微信远程互动，智能语音交互</p>
-                    <p class="newprice">199元</p>
-                    <p class="oldprice">300元</p>
-                </li>
-            </ul>
-        </div>
-    </div>>
-    <!--智能硬件结束-->
-    <!--服务中心开始-->
-    <div class="service clear-fix">
-        <ul class="main-service clear-fix">
-            <li>
-                <a href="">预约服务</a>
-            </li>
-            <li>
-                <a href="">预约服务</a>
-            </li>
-            <li>
-                <a href="">预约服务</a>
-            </li>
-            <li>
-                <a href="">预约服务</a>
-            </li>
-            <li class="last">
-                <a href="">预约服务</a>
-            </li>
-        </ul>
-        <div class="service-links">
-            <dl class=" service-item" >
-                <dt>帮助中心</dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-            </dl>
-            <dl class=" service-item">
-                <dt>帮助中心</dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-            </dl>
-            <dl class=" service-item">
-                <dt>帮助中心</dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-            </dl>
-            <dl class=" service-item">
-                <dt>帮助中心</dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-            </dl>
-            <dl class=" service-item">
-                <dt>帮助中心</dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-            </dl>
-            <dl class=" service-item">
-                <dt>帮助中心</dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">账户管理</a></dd>
-            </dl>
-            <div class="phone">
-                <p class="phone-number">400-100-5678</p>
-                <p class="phone-desc">
-                    周一至周日8:00-18:00 <br>
-                    (仅收市话费)
-                </p>
-                <a href="#" class="link-item">
-                    24小时在线客服
-                </a>
-
-            </div>
-        </div>
-    </div>
-    <!--服务中心结束-->
-    <!--底部开始-->
-<div class=" bottom clear-fix">
-    <div class="b-top clear-fix">
-        <div class="logo"><img src="./imgs/xiaomi_logo.png" alt=""></div>
-        <div class="text clear-fix">
-            <div class="b-item">
-                <a href="">大米网</a>
-                <span class="shu">|</span>
-                <a href="">MIUI</a>
-                <span class="shu">|</span>
-                <a href="">米聊</a>
-                <span class="shu">|</span>
-                <a href="">游戏</a>
-                <span class="shu">|</span>
-                <a href="">多看阅读</a>
-                <span class="shu">|</span>
-                <a href="">云服务</a>
-                <span class="shu">|</span>
-                <a href="">大米移动版</a>
-                <span class="shu">|</span>
-                <a href="">问题反馈</a>
-                <span class="shu">|</span>
-                <a href="">Select Region</a>
-            </div>
-            <div class="b-info">
-                <p>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号 </p><br>
-                <p>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
-            </div>
-        </div>
-        <div class="judge">
-            <a href=""><img src="./imgs/v-logo-3.png" alt=""></a>
-            <a href=""><img src="./imgs/v-logo-3.png" alt=""></a>
-            <a href=""><img src="./imgs/v-logo-3.png" alt=""></a>
-            <a href=""><img src="./imgs/v-logo-3.png" alt=""></a>
-            <a href=""><img src="./imgs/v-logo-3.png" alt=""></a>
-        </div>
-    </div>
-    <div class="b-bottom">
-        <p class="slogan">探索黑科技，小米为发烧而生!</p>
-    </div>
-</div>
-</div>
-    <!--底部结束-->
 </body>
 </html>
